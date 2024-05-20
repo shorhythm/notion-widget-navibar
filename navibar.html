@@ -1,0 +1,108 @@
+l<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #36479F;
+			text-decoration: none;
+			text-transform: capitalize;
+			display: inline-block;
+			padding: 6px;
+		}
+		
+		.background {
+			<!-- background-color: #ece5f0; -->
+		}
+
+		.border {
+			<！-- border: 1px solid #cccccc; -->
+
+		}
+		
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Portal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-building-flag"></i> Portal</a>
+		<a id="Knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-box"></i> Knowledge</a>
+		<a id="進捗定例" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-people-group"></i> 進捗定例</a>
+		<a id="執行定例" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-couch"></i> <font color="#993366">執行定例【要権限】</font></a>
+		<a id="Aegir" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-people-robbery"></i> <font color="#993366">Cafe Aegir【要権限】</font></a>
+		<a id="Cetus" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop"></i> Cafe Cetus</a>
+		<a id="Lorelei" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-clapperboard"></i> Cafe Lolelei</a>
+		<a id="Tiamat" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-palette"></i> Cafe Tiamat</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Portal')
+				window.open("https://www.notion.so/baleen-studio/Corporate-Portal-583a53d2aaee4a26a2da542653110df1", '_self').focus();
+			else if (id == "Knowledge")
+				window.open("https://www.notion.so/baleen-studio/193471ae9a314bb39642822191ee2406", '_self').focus();
+			else if (id == "進捗定例")
+				window.open("https://www.notion.so/baleen-studio/d18438b487154ede9a1e69d0a57299d1", '_self').focus();
+			else if (id == "執行定例")
+				window.open("https://www.notion.so/baleen-studio/8c28b8a0f48845aba913b7104d036df5", '_self').focus();
+			else if (id == "Aegir")
+				window.open("https://www.notion.so/baleen-studio/Cafe-Aegir-b740d55e4ff84451968d6fd5cf3fb067", '_self').focus();
+			else if (id == "Cetus")
+				window.open("https://www.notion.so/baleen-studio/Cafe-Cetus-7a2e4f36ac1840949d2ca7d995b96ac5", '_self').focus();
+			else if (id == "Lorelei")
+				window.open("https://www.notion.so/baleen-studio/Cafe-Lorelei-f7d09ac2715c4e9199994be0d8661ebd", '_self').focus();
+			else if (id == "Tiamat")
+				window.open("https://www.notion.so/baleen-studio/Cafe-Tiamat-527a11842474427292f15e0ad435d9bc", '_self').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
